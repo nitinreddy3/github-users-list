@@ -7,7 +7,7 @@
 ## Setup Procedure
 **1. Clone the repository into your local.**
 
-    $ git clone git@github.com:niketsourabh/react-test-nitinreddy.git
+    $ git clone git@github.com:nitinreddy3/github-users-list.git
 
 **2. Install NodeJS**
 
@@ -17,7 +17,7 @@
 
 Start the application using npm:
 
-    $ cd react-test-nitinreddy
+    $ cd github-users-list
     $ npm install
     $ npm start
 
