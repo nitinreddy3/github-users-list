@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default class Loader extends React.Component {
-  render() {
-    return (<div className="loaderOverlay" style={{display: "none"}}>
-      <div className="customLoader">Loading...</div>
-    </div>);
-  }
+    render() {
+        return (<tr className="loaderOverlay" style={{ display: "none" }}>
+            <td className="customLoader">Loading...</td>
+        </tr>);
+    }
 }
