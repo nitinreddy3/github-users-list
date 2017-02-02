@@ -5,8 +5,22 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer');
+var webpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var rootPath = path.join(__dirname);
+
+new webpackUglifyJsPlugin({
+    cacheFolder: path.resolve(__dirname, 'public/cached_uglify/'),
+    debug: true,
+    minimize: true,
+    sourceMap: false,
+    output: {
+        comments: false
+    },
+    compressor: {
+        warnings: false
+    }
+})
 
 var sassLoaders = [
     'css-loader',
@@ -15,13 +29,9 @@ var sassLoaders = [
 ];
 
 module.exports = {
-    devtool: 'eval-source-map',
-    entry: [
-        'webpack-hot-middleware/client?reload=true',
-        path.join(__dirname, './app/main.js')
-    ],
+    entry: './app/main.js',
     output: {
-        filename: 'javascript/[name]-[hash].js',
+        filename: 'javascript/[name]-[hash].min.js',
         path: path.join(__dirname, './build'),
         publicPath: '/'
     },
@@ -45,12 +55,7 @@ module.exports = {
                 loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))
             },
             { test: /\.(woff|woff2|svg|ttf|eot|ico)$/, loader: 'file-loader?name=theme/vendor/fonts/[name].[ext]' }
-        ],
-        postLoaders: [{
-            test: /\.js$/,
-            exclude: [/node_modules/, /vendor/, '/test/'],
-            loader: "jshint-loader"
-        }]
+        ]
     },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
@@ -62,9 +67,15 @@ module.exports = {
         new ExtractTextPlugin('theme/stylesheets/[name]-[hash].min.css'),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify('production')
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin({ minimize: true }),
         new CopyWebpackPlugin([{
             from: path.join(rootPath, 'app/theme/images'),
-            to: 'theme/images'
+            to: 'theme/default/images'
         }]),
         new webpack.optimize.UglifyJsPlugin({
             compressor: {
