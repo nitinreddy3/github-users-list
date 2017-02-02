@@ -1,0 +1,12 @@
+{
+    "esversion": 5,
+    "browser": true,
+    "eqnull" : true,
+    "globalstrict": true, 
+    "scripturl": true,
+    "jasmine": true,
+    "globals": {
+        "$": false,
+        "_": false
+    }
+}

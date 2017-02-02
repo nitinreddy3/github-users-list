@@ -9,6 +9,7 @@ import TableHeader from '../../../commons/tableHeader';
 import Alert from '../../../commons/alert';
 import CustomLoader from '../../../commons/loader';
 import $ from 'jquery';
+import _ from 'underscore';
 
 export default class UserList extends React.Component {
     constructor(props) {
