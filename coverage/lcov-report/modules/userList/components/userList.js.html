@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for modules/userList/components/userList.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">modules/userList/components</a> userList.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">62.5% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>10/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">62.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>5/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">63.64% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">62.5% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>10/16</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import { Link } from 'react-router';
+import UI_MESSAGES from '../../../constants/ui-messages';
+import CONSTANTS from '../../../constants/app-constant';
+import UI from '../../../mixins/ui';
+import UsersService from '../../../services/user-service';
+import UserTemplate from './userTemplate';
+import TableHeader from '../../../commons/tableHeader';
+import Alert from '../../../commons/alert';
+import CustomLoader from '../../../commons/loader';
+import $ from 'jquery';
+import _ from 'underscore';
+&nbsp;
+export default class UserList extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { users: [], showSince: 1, pageNumber: 1, loaded: false };
+        this.showUsers = this.showUsers.bind(this);
+    }
+&nbsp;
+    componentDidMount() {
+        this.getUsersList();
+        $(document).on('scroll', this.showMoreVisible.bind(this));
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    co</span>mponentWillUnmount() {
+<span class="cstat-no" title="statement not covered" >        $(document).off('scroll');</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    sh</span>owMoreVisible() {
+<span class="cstat-no" title="statement not covered" >        if (document.body.scrollHeight === document.body.scrollTop + window.innerHeight) {</span>
+<span class="cstat-no" title="statement not covered" >            this.state.pageNumber++;</span>
+<span class="cstat-no" title="statement not covered" >            this.getUsersList(this.state.showSince);</span>
+        }
+    }
+&nbsp;
+    getUsersList(showSince) {
+        UsersService.getUsers(showSince, this.state.pageNumber)
+            .then(<span class="fstat-no" title="function not covered" >(r</span>esult) =&gt; {
+<span class="cstat-no" title="statement not covered" >                this.setState({</span>
+                    users: _.union(this.state.users, result),
+                    showSince: this.getUpdatedlastUserId(result),
+                    loaded: true
+                });
+            })
+            .catch((error) =&gt; UI.notify('error', UI_MESSAGES.users.error.fetch));
+    }
+&nbsp;
+    getUpdatedlastUserId(result) {
+        return result &amp;&amp; result.length &amp;&amp;
+            _.last(result) &amp;&amp; _.last(result).id;
+    }
+&nbsp;
+    showUsers() {
+        return this.state.users.length ?
+<span class="branch-0 cbranch-no" title="branch not covered" >            this.state.users.map(<span class="fstat-no" title="function not covered" >(u</span>ser, key) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                return (&lt;UserTemplate key={key} user={user} /&gt;);</span>
+            }) :
+            (&lt;tr&gt;
+                &lt;td&gt;Loading...&lt;/td&gt;
+            &lt;/tr&gt;);
+    }
+&nbsp;
+    render() {
+        return (
+            &lt;div className="mainWrapper"&gt;
+                &lt;h2&gt;GitHub Users&lt;/h2&gt;
+                &lt;table className="table table-striped table-bordered"&gt;
+                    &lt;TableHeader headers={CONSTANTS.TABLE_HEADERS} /&gt;
+                    &lt;tbody&gt;
+                        {this.showUsers()}
+                        &lt;CustomLoader /&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        );
+    }
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Feb 02 2017 23:35:38 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

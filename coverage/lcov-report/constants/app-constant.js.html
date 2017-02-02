@@ -1,0 +1,1262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for constants/app-constant.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">constants</a> app-constant.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const CONSTANTS = {
+    ALERT: {
+        typeClass: {
+            error: 'alert-danger',
+            success: 'alert-success',
+            info: 'alert-info',
+        },
+        displayTime: 2000
+    },
+&nbsp;
+    TABLE_HEADERS: ['User Id', 'Login', 'Avatar', 'Repo'],
+&nbsp;
+    GIT_USERS: [
+        {
+            "login": "mojombo",
+            "id": 1,
+            "avatar_url": "https://avatars.githubusercontent.com/u/1?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mojombo",
+            "html_url": "https://github.com/mojombo",
+            "followers_url": "https://api.github.com/users/mojombo/followers",
+            "following_url": "https://api.github.com/users/mojombo/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mojombo/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mojombo/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mojombo/subscriptions",
+            "organizations_url": "https://api.github.com/users/mojombo/orgs",
+            "repos_url": "https://api.github.com/users/mojombo/repos",
+            "events_url": "https://api.github.com/users/mojombo/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mojombo/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "defunkt",
+            "id": 2,
+            "avatar_url": "https://avatars.githubusercontent.com/u/2?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/defunkt",
+            "html_url": "https://github.com/defunkt",
+            "followers_url": "https://api.github.com/users/defunkt/followers",
+            "following_url": "https://api.github.com/users/defunkt/following{/other_user}",
+            "gists_url": "https://api.github.com/users/defunkt/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/defunkt/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/defunkt/subscriptions",
+            "organizations_url": "https://api.github.com/users/defunkt/orgs",
+            "repos_url": "https://api.github.com/users/defunkt/repos",
+            "events_url": "https://api.github.com/users/defunkt/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/defunkt/received_events",
+            "type": "User",
+            "site_admin": true
+        },
+        {
+            "login": "pjhyett",
+            "id": 3,
+            "avatar_url": "https://avatars.githubusercontent.com/u/3?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/pjhyett",
+            "html_url": "https://github.com/pjhyett",
+            "followers_url": "https://api.github.com/users/pjhyett/followers",
+            "following_url": "https://api.github.com/users/pjhyett/following{/other_user}",
+            "gists_url": "https://api.github.com/users/pjhyett/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/pjhyett/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/pjhyett/subscriptions",
+            "organizations_url": "https://api.github.com/users/pjhyett/orgs",
+            "repos_url": "https://api.github.com/users/pjhyett/repos",
+            "events_url": "https://api.github.com/users/pjhyett/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/pjhyett/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "wycats",
+            "id": 4,
+            "avatar_url": "https://avatars.githubusercontent.com/u/4?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/wycats",
+            "html_url": "https://github.com/wycats",
+            "followers_url": "https://api.github.com/users/wycats/followers",
+            "following_url": "https://api.github.com/users/wycats/following{/other_user}",
+            "gists_url": "https://api.github.com/users/wycats/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/wycats/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/wycats/subscriptions",
+            "organizations_url": "https://api.github.com/users/wycats/orgs",
+            "repos_url": "https://api.github.com/users/wycats/repos",
+            "events_url": "https://api.github.com/users/wycats/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/wycats/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "ezmobius",
+            "id": 5,
+            "avatar_url": "https://avatars.githubusercontent.com/u/5?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ezmobius",
+            "html_url": "https://github.com/ezmobius",
+            "followers_url": "https://api.github.com/users/ezmobius/followers",
+            "following_url": "https://api.github.com/users/ezmobius/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ezmobius/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ezmobius/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ezmobius/subscriptions",
+            "organizations_url": "https://api.github.com/users/ezmobius/orgs",
+            "repos_url": "https://api.github.com/users/ezmobius/repos",
+            "events_url": "https://api.github.com/users/ezmobius/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ezmobius/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "ivey",
+            "id": 6,
+            "avatar_url": "https://avatars.githubusercontent.com/u/6?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ivey",
+            "html_url": "https://github.com/ivey",
+            "followers_url": "https://api.github.com/users/ivey/followers",
+            "following_url": "https://api.github.com/users/ivey/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ivey/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ivey/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ivey/subscriptions",
+            "organizations_url": "https://api.github.com/users/ivey/orgs",
+            "repos_url": "https://api.github.com/users/ivey/repos",
+            "events_url": "https://api.github.com/users/ivey/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ivey/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "evanphx",
+            "id": 7,
+            "avatar_url": "https://avatars.githubusercontent.com/u/7?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/evanphx",
+            "html_url": "https://github.com/evanphx",
+            "followers_url": "https://api.github.com/users/evanphx/followers",
+            "following_url": "https://api.github.com/users/evanphx/following{/other_user}",
+            "gists_url": "https://api.github.com/users/evanphx/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/evanphx/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/evanphx/subscriptions",
+            "organizations_url": "https://api.github.com/users/evanphx/orgs",
+            "repos_url": "https://api.github.com/users/evanphx/repos",
+            "events_url": "https://api.github.com/users/evanphx/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/evanphx/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "vanpelt",
+            "id": 17,
+            "avatar_url": "https://avatars.githubusercontent.com/u/17?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/vanpelt",
+            "html_url": "https://github.com/vanpelt",
+            "followers_url": "https://api.github.com/users/vanpelt/followers",
+            "following_url": "https://api.github.com/users/vanpelt/following{/other_user}",
+            "gists_url": "https://api.github.com/users/vanpelt/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/vanpelt/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/vanpelt/subscriptions",
+            "organizations_url": "https://api.github.com/users/vanpelt/orgs",
+            "repos_url": "https://api.github.com/users/vanpelt/repos",
+            "events_url": "https://api.github.com/users/vanpelt/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/vanpelt/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "wayneeseguin",
+            "id": 18,
+            "avatar_url": "https://avatars.githubusercontent.com/u/18?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/wayneeseguin",
+            "html_url": "https://github.com/wayneeseguin",
+            "followers_url": "https://api.github.com/users/wayneeseguin/followers",
+            "following_url": "https://api.github.com/users/wayneeseguin/following{/other_user}",
+            "gists_url": "https://api.github.com/users/wayneeseguin/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/wayneeseguin/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/wayneeseguin/subscriptions",
+            "organizations_url": "https://api.github.com/users/wayneeseguin/orgs",
+            "repos_url": "https://api.github.com/users/wayneeseguin/repos",
+            "events_url": "https://api.github.com/users/wayneeseguin/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/wayneeseguin/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "brynary",
+            "id": 19,
+            "avatar_url": "https://avatars.githubusercontent.com/u/19?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/brynary",
+            "html_url": "https://github.com/brynary",
+            "followers_url": "https://api.github.com/users/brynary/followers",
+            "following_url": "https://api.github.com/users/brynary/following{/other_user}",
+            "gists_url": "https://api.github.com/users/brynary/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/brynary/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/brynary/subscriptions",
+            "organizations_url": "https://api.github.com/users/brynary/orgs",
+            "repos_url": "https://api.github.com/users/brynary/repos",
+            "events_url": "https://api.github.com/users/brynary/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/brynary/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "kevinclark",
+            "id": 20,
+            "avatar_url": "https://avatars.githubusercontent.com/u/20?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/kevinclark",
+            "html_url": "https://github.com/kevinclark",
+            "followers_url": "https://api.github.com/users/kevinclark/followers",
+            "following_url": "https://api.github.com/users/kevinclark/following{/other_user}",
+            "gists_url": "https://api.github.com/users/kevinclark/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/kevinclark/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/kevinclark/subscriptions",
+            "organizations_url": "https://api.github.com/users/kevinclark/orgs",
+            "repos_url": "https://api.github.com/users/kevinclark/repos",
+            "events_url": "https://api.github.com/users/kevinclark/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/kevinclark/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "technoweenie",
+            "id": 21,
+            "avatar_url": "https://avatars.githubusercontent.com/u/21?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/technoweenie",
+            "html_url": "https://github.com/technoweenie",
+            "followers_url": "https://api.github.com/users/technoweenie/followers",
+            "following_url": "https://api.github.com/users/technoweenie/following{/other_user}",
+            "gists_url": "https://api.github.com/users/technoweenie/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/technoweenie/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/technoweenie/subscriptions",
+            "organizations_url": "https://api.github.com/users/technoweenie/orgs",
+            "repos_url": "https://api.github.com/users/technoweenie/repos",
+            "events_url": "https://api.github.com/users/technoweenie/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/technoweenie/received_events",
+            "type": "User",
+            "site_admin": true
+        },
+        {
+            "login": "macournoyer",
+            "id": 22,
+            "avatar_url": "https://avatars.githubusercontent.com/u/22?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/macournoyer",
+            "html_url": "https://github.com/macournoyer",
+            "followers_url": "https://api.github.com/users/macournoyer/followers",
+            "following_url": "https://api.github.com/users/macournoyer/following{/other_user}",
+            "gists_url": "https://api.github.com/users/macournoyer/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/macournoyer/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/macournoyer/subscriptions",
+            "organizations_url": "https://api.github.com/users/macournoyer/orgs",
+            "repos_url": "https://api.github.com/users/macournoyer/repos",
+            "events_url": "https://api.github.com/users/macournoyer/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/macournoyer/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "takeo",
+            "id": 23,
+            "avatar_url": "https://avatars.githubusercontent.com/u/23?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/takeo",
+            "html_url": "https://github.com/takeo",
+            "followers_url": "https://api.github.com/users/takeo/followers",
+            "following_url": "https://api.github.com/users/takeo/following{/other_user}",
+            "gists_url": "https://api.github.com/users/takeo/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/takeo/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/takeo/subscriptions",
+            "organizations_url": "https://api.github.com/users/takeo/orgs",
+            "repos_url": "https://api.github.com/users/takeo/repos",
+            "events_url": "https://api.github.com/users/takeo/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/takeo/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "Caged",
+            "id": 25,
+            "avatar_url": "https://avatars.githubusercontent.com/u/25?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Caged",
+            "html_url": "https://github.com/Caged",
+            "followers_url": "https://api.github.com/users/Caged/followers",
+            "following_url": "https://api.github.com/users/Caged/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Caged/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Caged/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Caged/subscriptions",
+            "organizations_url": "https://api.github.com/users/Caged/orgs",
+            "repos_url": "https://api.github.com/users/Caged/repos",
+            "events_url": "https://api.github.com/users/Caged/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Caged/received_events",
+            "type": "User",
+            "site_admin": true
+        },
+        {
+            "login": "topfunky",
+            "id": 26,
+            "avatar_url": "https://avatars.githubusercontent.com/u/26?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/topfunky",
+            "html_url": "https://github.com/topfunky",
+            "followers_url": "https://api.github.com/users/topfunky/followers",
+            "following_url": "https://api.github.com/users/topfunky/following{/other_user}",
+            "gists_url": "https://api.github.com/users/topfunky/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/topfunky/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/topfunky/subscriptions",
+            "organizations_url": "https://api.github.com/users/topfunky/orgs",
+            "repos_url": "https://api.github.com/users/topfunky/repos",
+            "events_url": "https://api.github.com/users/topfunky/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/topfunky/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "anotherjesse",
+            "id": 27,
+            "avatar_url": "https://avatars.githubusercontent.com/u/27?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/anotherjesse",
+            "html_url": "https://github.com/anotherjesse",
+            "followers_url": "https://api.github.com/users/anotherjesse/followers",
+            "following_url": "https://api.github.com/users/anotherjesse/following{/other_user}",
+            "gists_url": "https://api.github.com/users/anotherjesse/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/anotherjesse/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/anotherjesse/subscriptions",
+            "organizations_url": "https://api.github.com/users/anotherjesse/orgs",
+            "repos_url": "https://api.github.com/users/anotherjesse/repos",
+            "events_url": "https://api.github.com/users/anotherjesse/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/anotherjesse/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "roland",
+            "id": 28,
+            "avatar_url": "https://avatars.githubusercontent.com/u/28?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/roland",
+            "html_url": "https://github.com/roland",
+            "followers_url": "https://api.github.com/users/roland/followers",
+            "following_url": "https://api.github.com/users/roland/following{/other_user}",
+            "gists_url": "https://api.github.com/users/roland/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/roland/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/roland/subscriptions",
+            "organizations_url": "https://api.github.com/users/roland/orgs",
+            "repos_url": "https://api.github.com/users/roland/repos",
+            "events_url": "https://api.github.com/users/roland/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/roland/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "lukas",
+            "id": 29,
+            "avatar_url": "https://avatars.githubusercontent.com/u/29?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lukas",
+            "html_url": "https://github.com/lukas",
+            "followers_url": "https://api.github.com/users/lukas/followers",
+            "following_url": "https://api.github.com/users/lukas/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lukas/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lukas/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lukas/subscriptions",
+            "organizations_url": "https://api.github.com/users/lukas/orgs",
+            "repos_url": "https://api.github.com/users/lukas/repos",
+            "events_url": "https://api.github.com/users/lukas/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lukas/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        {
+            "login": "fanvsfan",
+            "id": 30,
+            "avatar_url": "https://avatars.githubusercontent.com/u/30?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/fanvsfan",
+            "html_url": "https://github.com/fanvsfan",
+            "followers_url": "https://api.github.com/users/fanvsfan/followers",
+            "following_url": "https://api.github.com/users/fanvsfan/following{/other_user}",
+            "gists_url": "https://api.github.com/users/fanvsfan/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/fanvsfan/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/fanvsfan/subscriptions",
+            "organizations_url": "https://api.github.com/users/fanvsfan/orgs",
+            "repos_url": "https://api.github.com/users/fanvsfan/repos",
+            "events_url": "https://api.github.com/users/fanvsfan/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/fanvsfan/received_events",
+            "type": "User",
+            "site_admin": false
+        }
+    ]
+&nbsp;
+};
+&nbsp;
+&nbsp;
+export default CONSTANTS;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Feb 02 2017 23:35:38 GMT+0530 (IST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1486058738900" clover="3.2.0">
+  <project timestamp="1486058738902" name="All files">
+    <metrics statements="57" coveredstatements="32" conditionals="36" coveredconditionals="8" methods="29" coveredmethods="15" elements="122" coveredelements="55" complexity="0" loc="57" ncloc="57" packages="5" files="10" classes="10">
+      <package name="commons">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <file name="alert.js" path="/home/nitin/Projects/github-users-list/app/javascript/commons/alert.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="3" count="1" type="stmt"/>
+        </file>
+        <file name="loader.js" path="/home/nitin/Projects/github-users-list/app/javascript/commons/loader.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="5" count="2" type="stmt"/>
+        </file>
+        <file name="tableHeader.js" path="/home/nitin/Projects/github-users-list/app/javascript/commons/tableHeader.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="8" count="8" type="stmt"/>
+        </file>
+      </package>
+      <package name="constants">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="app-constant.js" path="/home/nitin/Projects/github-users-list/app/javascript/constants/app-constant.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+        <file name="ui-messages.js" path="/home/nitin/Projects/github-users-list/app/javascript/constants/ui-messages.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="mixins">
+        <metrics statements="22" coveredstatements="9" conditionals="12" coveredconditionals="3" methods="8" coveredmethods="4"/>
+        <file name="restutils.js" path="/home/nitin/Projects/github-users-list/app/javascript/mixins/restutils.js">
+          <metrics statements="12" coveredstatements="7" conditionals="8" coveredconditionals="3" methods="6" coveredmethods="3"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="26" count="2" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="29" count="2" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+        </file>
+        <file name="ui.js" path="/home/nitin/Projects/github-users-list/app/javascript/mixins/ui.js">
+          <metrics statements="10" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="9" count="0" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="11" count="0" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="modules.userList.components">
+        <metrics statements="23" coveredstatements="12" conditionals="24" coveredconditionals="5" methods="15" coveredmethods="7"/>
+        <file name="userList.js" path="/home/nitin/Projects/github-users-list/app/javascript/modules/userList/components/userList.js">
+          <metrics statements="16" coveredstatements="10" conditionals="8" coveredconditionals="5" methods="11" coveredmethods="7"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="17" count="2" type="stmt"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="22" count="2" type="stmt"/>
+          <line num="23" count="2" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="38" count="2" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="46" count="2" type="stmt"/>
+          <line num="50" count="1" type="stmt"/>
+          <line num="55" count="2" type="stmt"/>
+          <line num="57" count="0" type="stmt"/>
+          <line num="65" count="2" type="stmt"/>
+        </file>
+        <file name="userTemplate.js" path="/home/nitin/Projects/github-users-list/app/javascript/modules/userList/components/userTemplate.js">
+          <metrics statements="7" coveredstatements="2" conditionals="16" coveredconditionals="0" methods="4" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="9" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="services">
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <file name="user-service.js" path="/home/nitin/Projects/github-users-list/app/javascript/services/user-service.js">
+          <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
